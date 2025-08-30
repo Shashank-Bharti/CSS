@@ -1,0 +1,21 @@
+body{
+    background: lightblue url(/drm\ bg.png)
+    center fixed ;
+    
+}
+/* 
+background-color -	Defines the background color of an element using color names, HEX, or RGB values.
+background-image -	Adds one or more images as the background of an element.
+background-repeat -	Specifies how the background image should be repeated—horizontally, vertically, or not at all.
+background-attachment -	Controls the scrolling behavior of the background image, making it fixed or scrollable with the page.
+background-position -	Determines the initial position of the background image within the element.
+background-origin -	Adjusts the placement of the background image relative to the padding, border, or content box.
+background-clip -	Sets how far the background (color or image) should extend within an element (e.g., to the padding or border). */
+body{
+    background-repeat: no-repeat;
+}
+.box{
+    background-image:linear-gradient(to left, #ffe343, #ffc767);
+    
+    border: 2px solid;
+}

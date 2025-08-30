@@ -1,0 +1,43 @@
+ /* Universal Selector */
+*{
+    margin: 0; /* Removes Default CSS Margin */
+}
+
+/* Type Selector */
+
+h1{
+    font-size: 45px;
+}
+
+/* Class Selector */
+.box{
+    padding: 10px;
+    background-color: bisque;
+    border-radius: 24px;
+}
+
+/* ID Selector */
+#text{
+    font-size: 1.2rem;
+}
+
+/* Grouped CSS Selectors */
+h1, p {
+     color:rgb(64, 54, 130);
+}
+
+/* Nested CSS */
+ul li{
+    margin-top: 10px;
+    color: chocolate;
+}
+
+/* Psuedo class Selector */
+h1:hover{
+    color: darkblue;
+}
+
+/* Psuedo element selector */
+p::first-line{
+    color: blueviolet;
+}
