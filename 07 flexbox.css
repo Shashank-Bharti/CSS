@@ -1,0 +1,96 @@
+/* The Flexible Box Layout module introduces a one-dimensional layout system that handles space distribution and item alignment effectively. It works seamlessly for horizontal (row) or vertical (column) arrangements, making it a go-to solution for responsive designs. */
+
+.container{
+    display: flex;
+    /* background-color: darkgreen; */
+    padding: 10px;
+
+}
+.sub-container{
+    flex-direction: row;
+    background-color: #4CAF50;
+            color: white;
+            margin: 5px;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+}
+.container:nth-child(5){
+    display: flex;
+    flex-direction: row-reverse;
+    /* background-color: darkgreen; */
+    padding: 10px;
+
+}
+.container:nth-child(7){
+    display: flex;
+    flex-direction: column;
+    /* background-color: darkgreen; */
+    padding: 10px;
+
+}
+.container:nth-child(9){
+    display: flex;
+    flex-direction: column-reverse;
+    /* background-color: darkgreen; */
+    padding: 10px;
+
+}
+/* Navbar */
+.flex-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: darkgreen;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.grid-item{
+    background-color: #4CAF50;
+    color: white;
+    padding: 25px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 25px);
+    box-sizing: border-box;
+}
+.flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .flex-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 300px;
+            /* Default layout */
+            box-sizing: border-box;
+        }
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    .container:nth-child(3){
+        flex-direction: column;
+    }
+    .container:nth-child(5){
+        flex-direction: column-reverse;
+    }
+    .flex-item {
+            flex: 1 1 100%;
+            /* Stacks items on top of each other */
+        }
+    
+}
