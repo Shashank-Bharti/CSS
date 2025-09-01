@@ -1,0 +1,33 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.grid-item{
+    background-color: lightgreen;
+    padding: 20px;
+    
+}
+.grid-container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-item1{
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+}
+.grid-container2{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.grid-item2{
+    background-color: lightgreen;
+    padding: 15px;
+    text-align: center;
+}
