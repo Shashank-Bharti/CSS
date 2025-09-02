@@ -1,0 +1,54 @@
+div {
+    background-color: lightcoral;
+    border: 1px solid black;
+    color: white;
+
+}
+
+.relative {
+    position: relative;
+    top: 20px;
+    left: 0;
+}
+
+.absolute {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    background-color: pink;
+    padding: 10px;
+}
+.container {
+            position: relative;
+            width: 300px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 20px auto;
+        }
+
+.fixed{
+    position: fixed;
+    padding: 10px;
+
+}
+ 
+.content {
+    border: none;
+    color: black;
+    background: none;
+            height: 400px;
+            padding: 10px;
+        }
+.content2 {
+    border: none;
+    color: black;
+    background: none;
+            height: 800px;
+            padding: 10px;
+        }
+
+.sticky{
+    position: sticky;
+    top:0;
+    padding: 10px;
+}
