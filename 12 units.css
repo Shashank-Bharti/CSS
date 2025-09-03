@@ -1,0 +1,51 @@
+/*  Commonly used units such as percentages (%), em, rem, pixels (px), viewport height (vh), and viewport width (vw). CSS units fall into two main categories */
+
+/* ABSOLUTE UNITS : FIXED SIZE 
+
+px (pixels):
+The most common absolute unit. A pixel is a fixed size, usually representing a tiny dot on the screen. For instance, 10px means 10 fixed pixels.
+
+pt (points):
+Typically used in print design, where 1 point equals 1/72 of an inch. It’s also fixed and does not adapt to the screen size.
+
+cm (centimeters), mm (millimeters), in (inches):
+These units are used for print and are based on real-world physical measurements. They are absolute in size and don’t scale according to screen size. */
+
+.px{
+    font-size: 14px;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+.pt{
+    font-size: 14pt;
+    height: 100pt;
+    width: 100pt;
+    background-color: blueviolet;
+}
+.mm{
+    font-size: 14mm;
+    height: 100mm;
+    width: 100mm;
+    background-color: aquamarine;
+}
+
+
+/*Relative Units:
+
+% (percent):
+This unit is relative to the parent element's size. For example, if you set an element's width to 50%, it will take up half of its parent element’s width.
+
+em:
+This unit is relative to the font size of the parent element. If a parent has a font size of 16px, then 1em equals 16px. So, 2em would be 32px.
+
+rem (root em):
+Similar to em, but instead of the parent’s font size, rem is relative to the root element (<html>). Typically, 1rem is set to 16px by default in most browsers.
+
+vw (viewport width):
+Relative to 1% of the viewport's width. If you set an element's width to 50vw, it will take up half of the viewport’s width, no matter what device or screen size is being used.
+
+vh (viewport height):
+Relative to 1% of the viewport's height. For example, 100vh would be the full height of the browser window. */
+
