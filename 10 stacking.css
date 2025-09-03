@@ -1,0 +1,61 @@
+div {
+    box-sizing: border-box;
+    font-family: Arial;
+    color: #eee;
+    width: 125px;
+    height: 125px;
+    text-align: center;
+}
+
+.non-positioned {
+    background-color: red;
+}
+
+.positioned:nth-child(1) {
+    position: absolute;
+    background: green;
+    top: 50px;
+    left: 50px;
+}
+
+.positioned:nth-child(3) {
+    position: absolute;
+    background: blue;
+    top: 90px;
+    left: 90px;
+}
+.positioned:nth-child(2){
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.purple{
+    background-color: purple;
+}
+
+/* using z-index for positioning order */
+.positioned:nth-child(1) {
+    z-index: 3;
+}
+
+.positioned:nth-child(3) {
+    z-index: 4;
+}
+.positioned:nth-child(2) {
+    z-index: 2;
+}
+
+.non-positioned {
+    z-index: 100;
+}
+
+.orange {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 20px;
+    background-color: orange;
+    font-family: Arial;
+    z-index: 3;
+
+}
