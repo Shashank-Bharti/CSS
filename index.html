@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- External CSS ⬇️ -->
     <!-- <link rel="stylesheet" href="01 syntax.css">  -->
     <!-- <link rel="stylesheet" href="02 colors.css">  -->
     <!-- <link rel="stylesheet" href="03 background.css"> -->
     <!-- <link rel="stylesheet" href="04 fonts.css"> -->
-        <!-- <link rel="stylesheet" href="05 boxmodel.css"> -->
+    <!-- <link rel="stylesheet" href="05 boxmodel.css"> -->
     <!-- <link rel="stylesheet" href="06 border&margins.css"> -->
-        <!-- <link rel="stylesheet" href="07 flexbox.css"> -->
+    <!-- <link rel="stylesheet" href="07 flexbox.css"> -->
     <!-- <link rel="stylesheet" href="08 grids.css"> -->
+    <!-- <link rel="stylesheet" href="09 positioning.css"> -->
+    <!-- <link rel="stylesheet" href="10 stacking.css"> -->
+    <!-- <link rel="stylesheet" href="11 media_queries.css"> -->
+    <link rel="stylesheet" href="12 units.css">
+    <link rel="stylesheet" href="14 variables.css">
+    <link rel="stylesheet" href="15 transitions.css">
+    <link rel="stylesheet" href="16 misc.css">
 
     <!-- Fonts Import -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
-</head>
-<!-- Internal CSS ⬇️ -->
-<style>
-h1{ /* <-- Selector*/
-    text-align: center;
-}
-</style>
-<body>
-    <!-- ---------------- Syntax---------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Internal CSS ⬇️ -->
+  <style>
+    h1 {
+      /* <-- Selector*/
+      text-align: center;
+    }
+  </style>
+  <body>
+    <!-- --------------------- Syntax------------------------ -->
     <!-- <div class="box"> -->
     <!-- Inline CSS ⬇️ -->
     <!-- <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Hello World!</h1>
@@ -37,8 +48,8 @@ h1{ /* <-- Selector*/
         <li>Second</li>
         <li>Third</li>
     </ul> -->
-    
-    <!-- --------------- Colors------------------ -->
+
+    <!-- -------------------- Colors------------------------- -->
     <!-- <h2>COLORS</h2>
     <ul class="colors">
         <li class="hex">HEXADECIMAL COLOR</li>
@@ -53,16 +64,16 @@ h1{ /* <-- Selector*/
         <p class="subText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum sint eveniet obcaecati.</p>
     </div> -->
 
-        <!-- ------------------ BOX MODEL ---------------------- -->
+    <!-- ------------------ BOX MODEL ---------------------- -->
     <!-- <div class="contentbox">This is a fixed-size div with box-sizing content box.</div>
     <div class="borderbox">This is a fixed-size div with box-sizing border box.</div>
     <div class="cBox2">This is a div with box-sizing content-box.</div>
     <div class="bBox2">This is a div with box-sizing border-box for consistent layout.</div>
     <div class="bBox3">This is a fixed sixe div with box-sizing border-box.</div>
     <div class="container">This is a responsive box with border-box.</div> -->
-    
+
     <!-- ---------------BORDERS AND MARGINS ---------------- -->
-     <!-- <div class="m-20">
+    <!-- <div class="m-20">
         This is a Box with 20px margin 
      </div>
      <div class="mt-30">
@@ -86,8 +97,8 @@ h1{ /* <-- Selector*/
     <p class="dashed">A dashed border.</p>
     <p class="solid">A solid border.</p>
     <p class="double">A double border.</p> -->
-    
-        <!-- -----------------FLEX AND FLEXBOX-------------------- -->
+
+    <!-- -----------------FLEX AND FLEXBOX-------------------- -->
     <!-- <div class="flex-nav">
         <a href="#" class="item">Home</a>
         <a href="#" class="item">Services</a>
@@ -167,8 +178,8 @@ h1{ /* <-- Selector*/
         <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Placeholder Image">
     </div> -->
 
-    <!-- ------------------- GRID LAYOUT --------------------- -->
-     <!-- <h3 style="text-align: center;">Grid Column Layout
+    <!-- -------------------- GRID LAYOUT --------------------- -->
+    <!-- <h3 style="text-align: center;">Grid Column Layout
      </h3>
     <div class="grid-container">
         <div class="grid-item">Item</div>
@@ -192,6 +203,61 @@ h1{ /* <-- Selector*/
         <div class="grid-item2">Item</div>
 
     </div> -->
+    <!-- -----------------------Positioning-------------------- -->
+    <!-- <h3><center>Static Position</center></h3>
+    <div class="box">BOX 1</div>
+    <div class="box">BOX 2</div>
 
-</body>
+    <h3><center>Relative Position</center></h3>
+    <div class="box">Box 1</div>
+    <div class="relative">Box 2</div><br>
+
+    <h3><center>Absolute Position</center></h3>
+        <div class="container">
+        <p>Container with Relative Positioning</p>
+        <div class="absolute">Absolutely Positioned Element</div>
+        </div>
+    
+    <h3><center>Fixed Position</center></h3>
+    <div class="fixed">
+        Fixed Position Element
+    </div>
+    <div class="content">
+        <center><p>Scroll down to see that the fixed box stays in place.</p></center>
+        
+    </div>
+    <h3><center>Sticky</center></h3>
+    <div class="sticky">
+        Sticky Element
+    </div>
+        <div class="content2">
+        <center><p>Scroll down to see effect.</p></center>
+        
+    </div> -->
+
+    <!-- ----------------------Z-index and Stacking------------- -->
+     <!-- <div class="positioned">Positioned
+        <div class="orange">Positioned</div>
+     </div>
+     <div class="purple positioned">Positioned</div>
+     <div class="positioned">Positioned</div>
+     <div class="non-positioned">Non-Positioned</div> -->
+
+    <!-- ----------------------- Media queries------------------- -->
+    <!-- <div class="container"><h2>Resize the window to change color of this Div</h2>
+    <p>TURN THE DEVICE TO LANDSCAPE TO CHANGE THE COLOR</p></div> -->
+
+    <!-- ------------------------- UNITS-------------------------- -->
+    <div class="px">W and H = 100 pixels</div>
+    <div class="pt">W and H = 100 points</div>
+    <div class="mm">W and H = 100 millimeter</div>
+    <div class="percent">W = 20% & H = 20%</div>
+    <div class="rem">W = 10rem & H = 10rem</div>
+    <div class="em">W = 10em & H = 10em%</div>
+    <div class="vw">W = 20vw </div>
+    <div class="vh">H = 20vh</div>
+
+    
+
+  </body>
 </html>
