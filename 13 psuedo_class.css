@@ -1,0 +1,43 @@
+div{
+    padding: 10px ;
+    margin: 10px;
+    background-color: lightslategrey;
+    box-sizing: border-box;
+}
+
+.hover:hover{
+    background-color: aqua;
+}
+.focus input:focus{
+    border:4px solid green ;
+    outline: none;
+}
+.active button:active{
+        background-color: lightgreen;
+        color: white;
+    }
+
+.visited a:visited{
+        color: purple;
+}
+.link a:link{
+        color: green;
+}
+.focus-visible button:focus-visible {
+            outline: 3px solid orange;
+        }   
+.form-container:focus-within {
+            border: 5px solid rgb(57, 255, 57);
+        }
+.first-child span:first-child{
+    color: aqua;
+}
+.last-child span:last-child{
+    color: lightgreen;
+}
+.nth-child p:nth-child(5){
+    color: blue;
+}
+.nth-last-child p:nth-last-child(2) {
+            color: orange;
+    }

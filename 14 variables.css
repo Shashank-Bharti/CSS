@@ -1,0 +1,46 @@
+/* syntax: 
+var( --custom-name, value );
+ */
+
+:root {
+
+    --main-bg-color: lightblue;
+    --main-text-color: darkblue;
+
+}
+
+.cv1 {
+    padding: 20px;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+:root {
+    --button-bg: #4CAF50;
+    --button-text: white;
+    --button-padding: 10px 20px;
+}
+
+.btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    padding: var(--button-padding);
+    margin: var(--spacing);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+}
+
+:root {
+    --spacing: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    margin: var(--spacing);
+}
