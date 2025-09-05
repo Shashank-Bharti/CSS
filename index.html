@@ -16,10 +16,11 @@
     <!-- <link rel="stylesheet" href="09 positioning.css"> -->
     <!-- <link rel="stylesheet" href="10 stacking.css"> -->
     <!-- <link rel="stylesheet" href="11 media_queries.css"> -->
-    <link rel="stylesheet" href="12 units.css">
-    <link rel="stylesheet" href="14 variables.css">
-    <link rel="stylesheet" href="15 transitions.css">
-    <link rel="stylesheet" href="16 misc.css">
+    <!-- <link rel="stylesheet" href="12 units.css"> -->
+    <link rel="stylesheet" href="13 psuedo_class.css" />
+    <link rel="stylesheet" href="14 variables.css" />
+    <link rel="stylesheet" href="15 transitions.css" />
+    <link rel="stylesheet" href="16 misc.css" />
 
     <!-- Fonts Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -72,7 +73,7 @@
     <div class="bBox3">This is a fixed sixe div with box-sizing border-box.</div>
     <div class="container">This is a responsive box with border-box.</div> -->
 
-    <!-- ---------------BORDERS AND MARGINS ---------------- -->
+    <!-- ------------------BORDERS AND MARGINS ---------------- -->
     <!-- <div class="m-20">
         This is a Box with 20px margin 
      </div>
@@ -98,7 +99,7 @@
     <p class="solid">A solid border.</p>
     <p class="double">A double border.</p> -->
 
-    <!-- -----------------FLEX AND FLEXBOX-------------------- -->
+    <!-- --------------------FLEX AND FLEXBOX-------------------- -->
     <!-- <div class="flex-nav">
         <a href="#" class="item">Home</a>
         <a href="#" class="item">Services</a>
@@ -178,7 +179,7 @@
         <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Placeholder Image">
     </div> -->
 
-    <!-- -------------------- GRID LAYOUT --------------------- -->
+    <!-- ---------------------- GRID LAYOUT --------------------- -->
     <!-- <h3 style="text-align: center;">Grid Column Layout
      </h3>
     <div class="grid-container">
@@ -236,7 +237,7 @@
     </div> -->
 
     <!-- ----------------------Z-index and Stacking------------- -->
-     <!-- <div class="positioned">Positioned
+    <!-- <div class="positioned">Positioned
         <div class="orange">Positioned</div>
      </div>
      <div class="purple positioned">Positioned</div>
@@ -248,16 +249,123 @@
     <p>TURN THE DEVICE TO LANDSCAPE TO CHANGE THE COLOR</p></div> -->
 
     <!-- ------------------------- UNITS-------------------------- -->
-    <div class="px">W and H = 100 pixels</div>
+    <!-- <div class="px">W and H = 100 pixels</div>
     <div class="pt">W and H = 100 points</div>
     <div class="mm">W and H = 100 millimeter</div>
     <div class="percent">W = 20% & H = 20%</div>
     <div class="rem">W = 10rem & H = 10rem</div>
     <div class="em">W = 10em & H = 10em%</div>
     <div class="vw">W = 20vw </div>
-    <div class="vh">H = 20vh</div>
+    <div class="vh">H = 20vh</div> -->
 
-    
+    <!-- --------------------------psuedo elements----------------- -->
+
+    <!-- <div class="hover">
+      <pre>
+class:hover{
+        background-color: aqua;
+    }
+    </pre
+      >
+    </div>
+    <div class="focus">
+      <input type="text" placeholder="Click on Me!!" />
+      <pre>
+class input:focus{
+    border:2px solid green ;
+    outline: none;
+    }
+    </pre
+      >
+    </div>
+    <div class="active">
+      <button>Click Me!</button>
+      <pre>
+class button:active{
+        background-color: lightgreen;
+        color: white;
+    }
+    </pre
+      >
+    </div>
+    <div class="visited">
+      <a href="https://www.google.co.in">Visit This</a>
+      <pre>
+class a:visited{
+        color: purple;
+    }
+    </pre
+      >
+    </div>
+    <div class="link">
+      <a href="https://www.google.co.in">This will turn green</a>
+      <pre>
+class a:link{
+        color: green;
+    }
+    </pre
+      >
+    </div>
+    <div class="focus-visible">
+      <button>Press Tab to focus</button>
+      <pre>
+class button:focus-visible {
+            outline: 3px solid orange;
+        }
+    </pre
+      >
+    </div>
+    <div class="form-container">
+      <input type="text" placeholder="Type here" />
+      <pre>
+.form-container:focus-within {
+            border: 2px solid green;
+        }</pre
+      >
+    </div>
+    <h2>Structural Targeting Psuedo Classes</h2>
+    <h4>
+      <pre class="first-child">FIRST CHILD
+
+span:first-child{
+    color: aqua;
+}
+    <span>FIRST CHILD</span>    
+    <span>LAST CHILD</span> 
+
+        </pre>
+    </h4>
+    <h4>
+      <pre class="last-child">LAST CHILD
+
+span:last-child{
+    color: lightgreen;
+}
+    <span>FIRST CHILD</span>    
+    <span>LAST CHILD</span> 
+
+        </pre>
+    </h4>
+    <h4>
+      <pre class="nth-child nth-last-child">Nth CHILD & Nth Last CHILD
+
+p:nth-child(5){
+    color: blue;
+}
+
+p:nth-last-child(2) {
+            color: orange;
+}
+
+        <p>This is the first paragraph.</p>
+        <p>This is the second paragraph.</p>
+        <p>This is the third paragraph.</p>
+        <p>This is the fourth paragraph.</p>
+        <p>This is the fifth paragraph.</p>
+
+        </pre>
+    </h4> -->
+    <!-- -----------------------------Variables-------------------- -->
 
   </body>
 </html>
