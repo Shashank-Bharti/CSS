@@ -1,0 +1,30 @@
+.calc-size{
+    width: calc(100vw - 20rem);
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+.blur{
+    background-color: aqua;
+    width: 120px;
+    padding: 50px;
+    font-size: 2rem;
+    filter: blur(2px);
+}
+.brightness{
+    background-color: rgb(243, 255, 74);
+    filter: brightness(50%);
+    width: 120px;
+    padding: 50px;
+    font-size: 2rem;    
+}
+.opacity{
+    filter: opacity(50%);
+}
+li{
+    padding: 10px;
+    color: aqua;
+}
+li:not(.no-default){
+    padding: 0px;
+    color: blue;
+}
